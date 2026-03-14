@@ -1,0 +1,167 @@
+{
+  "identity": {
+    "name": "The Obsidian Vault",
+    "persona": "A high-end, exclusive digital CFO. Authoritative, precise, and deeply intelligent. It doesn't just show data; it commands it.",
+    "emotional_tone": "Luxury, Trust, Precision, Intelligence",
+    "archetype": "JEWEL & LUXURY (The 'Black Card' Aesthetic)"
+  },
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "Playfair Display",
+        "fallback": "serif",
+        "usage": "Headings h1-h3, Key Metrics",
+        "weights": ["400", "700"]
+      },
+      "body": {
+        "family": "Manrope",
+        "fallback": "sans-serif",
+        "usage": "Body text, UI elements, Data tables",
+        "weights": ["400", "500", "600"]
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "fallback": "monospace",
+        "usage": "Code snippets, Transaction IDs, API keys",
+        "weights": ["400"]
+      }
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-medium",
+      "body": "text-base leading-relaxed text-muted-foreground",
+      "small": "text-sm font-medium text-muted-foreground",
+      "tiny": "text-xs uppercase tracking-widest text-muted-foreground/80"
+    }
+  },
+  "colors": {
+    "theme_mode": "dark",
+    "palette": {
+      "background": "#050505",
+      "foreground": "#FAFAFA",
+      "card": "#0A0A0A",
+      "card_foreground": "#FFFFFF",
+      "popover": "#111111",
+      "popover_foreground": "#FAFAFA",
+      "primary": "#D4AF37",
+      "primary_foreground": "#000000",
+      "secondary": "#1E293B",
+      "secondary_foreground": "#F8FAFC",
+      "muted": "#27272A",
+      "muted_foreground": "#A1A1AA",
+      "accent": "#10B981",
+      "accent_foreground": "#FFFFFF",
+      "destructive": "#991B1B",
+      "destructive_foreground": "#FAFAFA",
+      "border": "#27272A",
+      "input": "#27272A",
+      "ring": "#D4AF37"
+    },
+    "charts": {
+      "color_1": "#D4AF37",
+      "color_2": "#10B981",
+      "color_3": "#3B82F6",
+      "color_4": "#8B5CF6",
+      "color_5": "#EC4899"
+    },
+    "special_gradients": {
+      "gold_glow": "linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%)",
+      "obsidian_glass": "linear-gradient(180deg, rgba(20,20,20,0.8) 0%, rgba(10,10,10,0.9) 100%)",
+      "alert_red": "linear-gradient(135deg, #EF4444 0%, #B91C1C 100%)"
+    }
+  },
+  "layout": {
+    "container_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": {
+      "section_gap": "py-12 md:py-20",
+      "card_padding": "p-6 md:p-8",
+      "grid_gap": "gap-6 md:gap-8"
+    },
+    "grid_system": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "card_row": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-sm font-medium transition-all shadow-[0_0_15px_rgba(212,175,55,0.3)] hover:shadow-[0_0_25px_rgba(212,175,55,0.5)]",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-sm font-medium",
+      "ghost": "hover:bg-accent hover:text-accent-foreground rounded-sm",
+      "outline": "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-sm"
+    },
+    "cards": {
+      "default": "bg-card text-card-foreground rounded-lg border border-border shadow-sm hover:border-primary/50 transition-colors duration-300",
+      "interactive": "group relative overflow-hidden rounded-lg border border-border bg-gradient-to-b from-card to-background hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 cursor-pointer"
+    },
+    "inputs": {
+      "style": "bg-background border-input ring-offset-background placeholder:text-muted-foreground focus-visible:ring-1 focus-visible:ring-ring focus-visible:border-primary rounded-md h-10 px-3 py-2 text-sm"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "header": "backdrop-blur-md bg-background/80 border-b border-border/50 sticky top-0 z-50",
+      "overlay": "backdrop-blur-sm bg-background/50"
+    },
+    "textures": {
+      "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+    },
+    "borders": {
+      "active_glow": "ring-1 ring-primary ring-opacity-50",
+      "subtle": "border border-white/5"
+    }
+  },
+  "motion": {
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -20 },
+      "transition": { "duration": 0.3, "ease": "easeOut" }
+    },
+    "stagger_children": {
+      "animate": { "transition": { "staggerChildren": 0.1 } }
+    },
+    "micro_interactions": {
+      "button_click": "active:scale-95 transition-transform",
+      "card_hover": "hover:-translate-y-1 transition-transform duration-300"
+    }
+  },
+  "accessibility": {
+    "focus_ring": "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
+    "min_contrast_ratio": "4.5:1",
+    "reduced_motion": "motion-reduce:transition-none motion-reduce:transform-none"
+  },
+  "image_urls": {
+    "logo": "https://images.unsplash.com/photo-1647356191320-d7a1f80ca777?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGZpbmFuY2lhbCUyMGRhdGElMjBuZXR3b3JrJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzczNTAzODE1fDA&ixlib=rb-4.1.0&q=85",
+    "hero_background": "https://images.unsplash.com/photo-1684610529682-553625a1ffed?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGZpbmFuY2lhbCUyMGRhdGElMjBuZXR3b3JrJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzczNTAzODE1fDA&ixlib=rb-4.1.0&q=85",
+    "audit_report_cover": "https://images.unsplash.com/photo-1744070018851-5b2f5a3d1d81?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGZpbmFuY2lhbCUyMGRhdGElMjBuZXR3b3JrJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzczNTAzODE1fDA&ixlib=rb-4.1.0&q=85",
+    "login_sidebar": "https://images.unsplash.com/photo-1664854953181-b12e6dda8b7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGZpbmFuY2lhbCUyMGRhdGElMjBuZXR3b3JrJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzczNTAzODE1fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "Install 'recharts' and 'lucide-react' if not present (already checked, they are).",
+    "UPDATE tailwind.config.js to use the colors defined in this JSON. The dark mode colors MUST be updated to remove the blue-ish slate default and use the Obsidian/Gold palette.",
+    "UPDATE index.css to set the CSS variables for the new palette.",
+    "IMPORT 'Manrope' and 'Playfair Display' from Google Fonts in index.css or index.html.",
+    "USE 'Sonner' for all notifications.",
+    "USE 'Recharts' for all data visualization. Customize the Tooltips to have dark backgrounds and gold borders.",
+    "ENSURE all inputs and forms use the Shadcn 'Form' component pattern with Zod validation.",
+    "CREATE a layout wrapper that includes the Sidebar (collapsible) and Topbar.",
+    "The Dashboard Grid should be: Row 1: Health Score (Hero), Row 2: 3 Key Metrics, Row 3: Cash Flow Chart (Wide), Row 4: Recent Transactions + Profit Leaks.",
+    "For the 'Financial Health Score', create a custom circular progress component with a glowing effect.",
+    "Add a global 'Noise' texture overlay (opacity 2-3%) to the body to give it a premium 'printed' feel.",
+    "Do NOT use gradients on text unless it is for the main Hero H1.",
+    "Ensure the 'Audit Risk Score' is prominent and color-coded (Green/Yellow/Red).",
+    "For tables, use the Shadcn Table component but add 'hover:bg-muted/50' to rows for interactivity."
+  ],
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for sticky headers and modals.",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Never use AI assistant Emoji characters like 🤖 etc.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Components MUST use named exports."
+  ]
+}
